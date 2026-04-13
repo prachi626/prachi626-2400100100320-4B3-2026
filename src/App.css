@@ -1,0 +1,127 @@
+:root {
+  /* Aquamorphic Palette */
+  --aqua-deep: #0077b6;
+  --aqua-mid: #00b4d8;
+  --aqua-light: #90e0ef;
+  --aqua-soft: #caf0f8;
+  --bg-gradient: linear-gradient(135deg, #e0f7fa 0%, #80deea 100%);
+  --glass-bg: rgba(255, 255, 255, 0.45);
+  --glass-border: rgba(255, 255, 255, 0.7);
+  --text-main: #023e8a;
+  --text-muted: #0077b6;
+  --shadow-fluid: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+}
+
+body {
+  background: var(--bg-gradient);
+  background-attachment: fixed;
+  color: var(--text-main);
+  margin: 0;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  min-height: 100vh;
+}
+
+.india-store-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Glassmorphism Navigation */
+.top-nav {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  padding: 15px 25px;
+  border-radius: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  box-shadow: var(--shadow-fluid);
+}
+
+.product-selector select {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid var(--aqua-mid);
+  padding: 8px 15px;
+  border-radius: 12px;
+  color: var(--text-main);
+  cursor: pointer;
+}
+
+/* Product Showcase - Organic Shapes */
+.product-showcase {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 50px;
+  background: var(--glass-bg);
+  backdrop-filter: blur(8px);
+  padding: 40px;
+  border-radius: 40px;
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow-fluid);
+}
+
+.img-container img {
+  width: 320px;
+  border-radius: 30px;
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.img-container img:hover {
+  transform: scale(1.05) rotate(2deg);
+}
+
+.product-title {
+  font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(to right, #023e8a, #00b4d8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.star-badge {
+  background: rgba(0, 180, 216, 0.2);
+  color: var(--aqua-deep);
+  padding: 5px 12px;
+  border-radius: 50px;
+  font-weight: bold;
+  border: 1px solid var(--aqua-mid);
+}
+
+.price-section .amt {
+  font-size: 2.5rem;
+  color: var(--aqua-deep);
+  text-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Layout Grid */
+.layout-grid {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 40px;
+}
+
+/* Fluid Review Cards */
+.indian-review-card, .review-stat-card, .write-review-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  border-radius: 28px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: var(--shadow-fluid);
+  transition: all 0.3s ease;
+}
+
+.indian-review-card:hover {
+  background: rgba(255, 255, 255, 0.55);
+  transform: translateY(-5px);
+}
+
+.avatar {
+  background: linear-gradient(45deg, var(--aqua-mid), var(--aqua-light));
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 180, 216, 0
